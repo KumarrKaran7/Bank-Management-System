@@ -1,5 +1,7 @@
 # Bank Management System (C++)
-
+![C++17](https://img.shields.io/badge/C%2B%2B-17-blue.svg)
+![Build Status](https://github.com/KumarrKaran7/Bank-Management-System/actions/workflows/build.yml/badge.svg)
+![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)
 A console-based **Bank Management System** built in modern C++ for **CS201**, demonstrating core and advanced **Object-Oriented Programming (OOP)** principles, polymorphic account hierarchies, custom exception handling, operator overloading, and observer-based transaction notifications.
 
 ---
