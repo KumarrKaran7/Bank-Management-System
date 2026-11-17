@@ -1,0 +1,14 @@
+name: C++17 Build & Smoke Test
+
+on: [push, pull_request]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build with Makefile
+        run: make
+      - name: Run Automated CLI Smoke Test
+        run: |
+          printf "1\nVashvik Vyas\n5000\n5\n1\n1500\n7\n1\n8\n1\n12\n0\n" | ./bank_system
