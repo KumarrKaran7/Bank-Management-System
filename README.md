@@ -99,7 +99,7 @@ make run
 | Role | Name | Roll Number | GitHub | Module / Responsibility |
 | :--- | :--- | :--- | :--- | :--- |
 | **Team Leader** | Vashvik Vyas | `20251501172` | — | Core `Account` Hierarchy & Polymorphism |
-| **Member** | Karan Kumar Saroj | `20251502039` | [@KumarrKaran7](https://github.com/KumarrKaran7) | Repository Setup, Build Configuration (`Makefile`) & CLI Integration |
-| **Member** | Sarthak Rawat | `20251501155` | [@sarthakdev01](https://github.com/sarthakdev01) | Custom Exception Hierarchy, RTTI & Input Validation |
+| **Member** | Karan Kumar Saroj | `20251502039` | [@KumarrKaran7](https://github.com/KumarrKaran7) | Custom Exception Hierarchy, RTTI & Input Validation |
+| **Member** | Sarthak Rawat | `20251501155` | [@sarthakdev01](https://github.com/sarthakdev01) | Repository Setup, Build Configuration (`Makefile`) & CLI Integration |
 | **Member** | Ravaliya Raj Mahendrabhai | `20251501142` | — | `TransactionManager` Ledger & `Notifier` Observer System |
 | **Member** | Vikas Chand Bairwa | `20251501175` | — | Operator Overloading, Templates & Type Conversions |
