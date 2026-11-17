@@ -1,0 +1,48 @@
+@startuml
+object "acc1 : SavingsAccount" as acc1 {
+  accountNumber = 1000000001
+  holderName = "Vashvik Vyas"
+  balance = 6200.00
+  MIN_BALANCE = 1000.0
+  INTEREST_RATE = 0.04
+}
+
+object "acc2 : CurrentAccount" as acc2 {
+  accountNumber = 1000000002
+  holderName = "Sarthak Rawat"
+  balance = 15000.00
+  overdraftLimit = 5000.0
+}
+
+object "acc3 : FixedAccount" as acc3 {
+  accountNumber = 1000000003
+  holderName = "Karan Kumar Saroj"
+  balance = 50000.00
+  tenureMonths = 12
+  matured = false
+}
+
+object "txn1 : Transaction" as txn1 {
+  description = "Initial deposit"
+  amount = 5000.00
+  type = "CR"
+}
+
+object "txn2 : Transaction" as txn2 {
+  description = "User cash deposit"
+  amount = 1200.00
+  type = "CR"
+}
+
+object "console : ConsoleNotifier" as console {
+}
+
+object "audit : AuditLogger" as audit {
+}
+
+acc1 *-- txn1
+acc1 *-- txn2
+acc1 --> console : subscribed
+acc2 --> console : subscribed
+acc3 --> console : subscribed
+@enduml
