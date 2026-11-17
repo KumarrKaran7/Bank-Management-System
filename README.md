@@ -1,6 +1,6 @@
-# Banking Management System (C++)
+# Bank Management System (C++)
 
-A console-based **Banking Management System** built in modern C++ demonstrating core and advanced **Object-Oriented Programming (OOP)** principles, polymorphic account hierarchies, custom exception handling, operator overloading, and observer-based transaction notifications.
+A console-based **Bank Management System** built in modern C++ for **CS201**, demonstrating core and advanced **Object-Oriented Programming (OOP)** principles, polymorphic account hierarchies, custom exception handling, operator overloading, and observer-based transaction notifications[cite: 2, 3].
 
 ---
 
@@ -95,10 +95,10 @@ make run
 
 ## Team Members & Contributions
 
-| Name | Roll Number | GitHub | Module / Responsibility |
-| :--- | :--- | :--- | :--- |
-| Member 1 | — | `@username1` | Core `Account` Hierarchy & Polymorphism |
-| Member 2 | — | `@username2` | Custom Exception Handling & Input Validation |
-| Member 3 | — | `@username3` | `TransactionManager` & `Notifier` Observer System |
-| Member 4 | — | `@username4` | Operator Overloading, Templates & Type Conversions |
-| Member 5 | — | `@username5` | CLI Menu Integration, Testing & Documentation |
+| Role | Name | Roll Number | GitHub | Module / Responsibility |
+| :--- | :--- | :--- | :--- | :--- |
+| **Team Leader** | Vashvik Vyas | `20251501172` | — | Core `Account` Hierarchy & Polymorphism |
+| **Member** | Karan Kumar Saroj | `20251502039` | [@KumarrKaran7](https://github.com/KumarrKaran7) | Repository Setup, Build Configuration (`Makefile`) & CLI Integration |
+| **Member** | Sarthak Rawat | `20251501155` | [@sarthakdev01](https://github.com/sarthakdev01) | Custom Exception Hierarchy, RTTI & Input Validation |
+| **Member** | Ravaliya Raj Mahendrabhai | `20251501142` | — | `TransactionManager` Ledger & `Notifier` Observer System |
+| **Member** | Vikas Chand Bairwa | `20251501175` | — | Operator Overloading, Templates & Type Conversions |
