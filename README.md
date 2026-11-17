@@ -81,6 +81,19 @@ make run
 
 ---
 
+## Sample Output
+
+### 1. Main Menu & Account Creation
+![Main Menu](screenshots/menu.png)
+
+### 2. Account Statement & Transaction Ledger
+![Account Statement](screenshots/statement.png)
+
+### 3. OOP Concepts Demonstration (Option 12)
+![OOP Demo](screenshots/oop_demo.png)
+
+---
+
 ## Team Members & Contributions
 
 | Role | Name | Roll Number | GitHub | Module / Responsibility |
