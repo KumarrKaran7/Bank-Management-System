@@ -1,0 +1,108 @@
+@startuml
+skinparam classAttributeIconSize 0
+
+abstract class Account {
+  # accountNumber : int
+  - balance : double
+  - transactionManager : TransactionManager
+  - notifiers : vector<Notifier*>
+  - {static} lastAccountNumber : int
+  + holderName : string
+  + Account(name : string, initialBalance : double)
+  + {static} getAccountCount() : int
+  + getBalance() : double
+  + getAccountNumber() : int
+  + deposit(amount : double) : void
+  + deposit(description : string, amount : double) : void
+  + withdraw(amount : double) : void
+  + {abstract} withdraw(description : string, amount : double) : void
+  + logTransaction(desc : string, amount : double, type : string) : void
+  + subscribe(notifier : Notifier*) : void
+  + notifyAll(message : string) : void
+  + {abstract} getAccountType() : string
+  + showAccountCategory() : void
+  + printStatement() : void
+}
+
+class "Account::TransactionManager" as TransactionManager {
+  - records : vector<Transaction>
+  + add(desc : string, amount : double, type : string) : void
+  + display() : void
+}
+
+class Transaction <<struct>> {
+  + description : string
+  + amount : double
+  + type : string
+  + timestamp : string
+  + Transaction(desc : string, amt : double, txnType : string)
+}
+
+class SavingsAccount {
+  - MIN_BALANCE : const double = 1000.0
+  - INTEREST_RATE : const double = 0.04
+  + SavingsAccount(name : string, balance : double)
+  + getAccountType() : string
+  + withdraw(description : string, amount : double) : void
+  + addInterest() : void
+}
+
+class CurrentAccount {
+  - overdraftLimit : double
+  + CurrentAccount(name : string, balance : double, limit : double)
+  + getAccountType() : string
+  + withdraw(description : string, amount : double) : void
+}
+
+class FixedAccount {
+  - tenureMonths : int
+  - matured : bool
+  + FixedAccount(name : string, balance : double, tenure : int)
+  + getAccountType() : string
+  + mature() : void
+  + deposit(description : string, amount : double) : void
+  + withdraw(description : string, amount : double) : void
+  + showTenure() : void
+}
+
+interface Notifier {
+  + {abstract} notify(message : string) : void
+}
+
+class ConsoleNotifier {
+  + notify(message : string) : void
+}
+
+class SMSNotifier {
+  - phone : string
+  + notify(message : string) : void
+}
+
+class EmailNotifier {
+  - email : string
+  + notify(message : string) : void
+}
+
+class AuditLogger <<final>> {
+  + log(message : string) : void
+}
+
+class BankException {
+  - message : string
+  + what() : const char*
+}
+
+Account <|-- SavingsAccount
+Account <|-- CurrentAccount
+Account <|-- FixedAccount
+
+Account *-- TransactionManager : nested
+TransactionManager *-- "*" Transaction : stores
+Account o-- "*" Notifier : notifies
+
+Notifier <|.. ConsoleNotifier
+Notifier <|.. SMSNotifier
+Notifier <|.. EmailNotifier
+
+Account ..> BankException : throws
+@enduml
