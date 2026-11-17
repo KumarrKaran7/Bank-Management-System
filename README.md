@@ -63,21 +63,42 @@ All Object-Oriented Analysis and Design (OOAD) artifacts, PlantUML source files,
 
 ---
 
-## Build & Run Instructions
+## How to Clone & Run Locally
 
 ### Prerequisites
-- A C++14 or C++17 compatible compiler (`g++`, `clang++`, or MSVC)
+- **Git** installed on your system
+- A **C++14 / C++17** compatible compiler (`g++`, `clang++`, or MinGW on Windows)
 
-### Using `g++` (Linux / macOS / Windows MinGW)
+### Step 1: Clone the Repository
+Open your terminal or command prompt and clone the repository:
+```bash
+git clone [https://github.com/KumarrKaran7/Bank-Management-System.git](https://github.com/KumarrKaran7/Bank-Management-System.git)
+cd Bank-Management-System
+```
+
+### Step 2: Compile and Run
+
+#### Option A: Using `Makefile` (Linux / macOS / Windows with `make`)
+```bash
+make run
+```
+
+#### Option B: Using `g++` Directly (Linux / macOS)
 ```bash
 g++ -std=c++17 -Wall -Wextra src/main.cpp -o bank_system
 ./bank_system
 ```
 
-### Using `Makefile`
+#### Option C: Using `g++` on Windows (Command Prompt / PowerShell)
 ```bash
-make run
+g++ -std=c++17 -Wall -Wextra src/main.cpp -o bank_system.exe
+bank_system.exe
 ```
+
+#### Option D: Run in Browser via GitHub Codespaces (No Local Setup)
+1. Click the green **`<> Code`** button at the top of this repository.
+2. Open the **Codespaces** tab and click **Create codespace on main**.
+3. Once the terminal loads, type `make run` to launch the program immediately.
 
 ---
 
@@ -99,7 +120,7 @@ make run
 | Role | Name | Roll Number | GitHub | Module / Responsibility |
 | :--- | :--- | :--- | :--- | :--- |
 | **Team Leader** | Vashvik Vyas | `20251501172` | — | Core `Account` Hierarchy & Polymorphism |
-| **Member** | Karan Kumar Saroj | `20251502039` | [@KumarrKaran7](https://github.com/KumarrKaran7) | Custom Exception Hierarchy, RTTI & Input Validation |
-| **Member** | Sarthak Rawat | `20251501155` | [@sarthakdev01](https://github.com/sarthakdev01) | Repository Setup, Build Configuration (`Makefile`) & CLI Integration |
+| **Member** | Karan Kumar Saroj | `20251502039` | [@KumarrKaran7](https://github.com/KumarrKaran7) | Repository Setup, Build Configuration (`Makefile`) & CLI Integration |
+| **Member** | Sarthak Rawat | `20251501155` | [@sarthakdev01](https://github.com/sarthakdev01) | Custom Exception Hierarchy, RTTI & Input Validation |
 | **Member** | Ravaliya Raj Mahendrabhai | `20251501142` | — | `TransactionManager` Ledger & `Notifier` Observer System |
-| **Member** | Vikas Chand Bairwa | `20251501175` | vikaschandbairwa7 | Operator Overloading, Templates & Type Conversions |
+| **Member** | Vikas Chand Bairwa | `20251501175` | — | Operator Overloading, Templates & Type Conversions |
