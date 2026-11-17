@@ -74,7 +74,16 @@ classDiagram
 | **Object Slicing Demonstration** | `PremiumCustomerRecord` assigned by value to `CustomerRecord` in Option 12 |
 
 ---
+## Program Output & Screenshots
 
+### 1. Main Menu & Account Creation
+![Main Menu and Account Creation](screenshots/menu.png)
+
+### 2. Account Statement & Notifications
+![Account Statement and Transaction History](screenshots/statement.png)
+
+### 3. OOP Concepts Demonstration
+![OOP Concepts Output](screenshots/oop-demo.png)
 ## Build & Run Instructions
 
 ### Prerequisites
