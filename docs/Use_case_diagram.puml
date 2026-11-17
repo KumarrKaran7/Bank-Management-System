@@ -1,0 +1,44 @@
+@startuml
+left to right direction
+skinparam packageStyle rectangle
+
+actor "Bank Operator /\nCustomer" as User
+actor "Notification\nService" as NotifierSys
+
+rectangle "Bank Management System (C++)" {
+  usecase "UC-01: Create Account\n(Savings / Current / FD)" as UC1
+  usecase "UC-02: Deposit Money" as UC2
+  usecase "UC-03: Withdraw Money" as UC3
+  usecase "UC-04: View Balance &\nTransaction Statement" as UC4
+  usecase "UC-05: Credit Savings Interest" as UC5
+  usecase "UC-06: Mature Fixed Deposit" as UC6
+  usecase "UC-07: Compare Two Accounts" as UC7
+  usecase "UC-08: Update Holder Name" as UC8
+  usecase "UC-09: Demonstrate OOP Concepts" as UC9
+  usecase "Log Transaction (CR/DR)" as LogTxn
+  usecase "Dispatch Alert\n(Console / SMS / Email)" as Alert
+  usecase "Record Audit Log" as Audit
+}
+
+User --> UC1
+User --> UC2
+User --> UC3
+User --> UC4
+User --> UC5
+User --> UC6
+User --> UC7
+User --> UC8
+User --> UC9
+
+UC1 ..> LogTxn : <<include>>
+UC1 ..> Audit : <<include>>
+UC2 ..> LogTxn : <<include>>
+UC2 ..> Alert : <<include>>
+UC3 ..> LogTxn : <<include>>
+UC3 ..> Alert : <<include>>
+UC5 ..> LogTxn : <<include>>
+UC5 ..> Alert : <<include>>
+UC6 ..> Alert : <<include>>
+
+Alert --> NotifierSys
+@enduml
