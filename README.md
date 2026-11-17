@@ -125,4 +125,4 @@ bank_system.exe
 | **Member** | Karan Kumar Saroj | `20251502039` | [@KumarrKaran7](https://github.com/KumarrKaran7) | Custom Exception Hierarchy, RTTI & Input Validation |
 | **Member** | Sarthak Rawat | `20251501155` | [@sarthakdev01](https://github.com/sarthakdev01) | Repository Setup, Build Configuration (`Makefile`) & CLI Integration |
 | **Member** | Ravaliya Raj Mahendrabhai | `20251501142` | — | `TransactionManager` Ledger & `Notifier` Observer System |
-| **Member** | Vikas Chand Bairwa | `20251501175` | — | Operator Overloading, Templates & Type Conversions |
+| **Member** | Vikas Chand Bairwa | `20251501175` | [@vikaschandbairwa7-blip]( https://github.com/vikaschandbairwa7-blip) | Operator Overloading, Templates & Type Conversions |
