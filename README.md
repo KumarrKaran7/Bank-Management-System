@@ -74,7 +74,7 @@ All Object-Oriented Analysis and Design (OOAD) artifacts, PlantUML source files,
 ### Step 1: Clone the Repository
 Open your terminal or command prompt and clone the repository:
 ```bash
-git clone [https://github.com/KumarrKaran7/Bank-Management-System.git](https://github.com/KumarrKaran7/Bank-Management-System.git)
+git clone [https://github.com/sarthakdev01/Bank-Management-System.git](https://github.com/sarthakdev01/Bank-Management-System.git)
 cd Bank-Management-System
 ```
 
